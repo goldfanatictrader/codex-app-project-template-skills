@@ -1,0 +1,7 @@
+interface:
+  display_name: "Security Readiness"
+  short_description: "Check security before production release"
+  default_prompt: "Use $security-production-readiness to assess secrets, auth, permissions, dependency risk, and production hardening gaps."
+
+policy:
+  allow_implicit_invocation: false

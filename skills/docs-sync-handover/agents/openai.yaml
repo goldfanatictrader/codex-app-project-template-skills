@@ -1,0 +1,7 @@
+interface:
+  display_name: "Docs Sync Handover"
+  short_description: "Keep docs and memory aligned"
+  default_prompt: "Use $docs-sync-handover to update project memory and documentation so the current state is accurately captured for the next handoff."
+
+policy:
+  allow_implicit_invocation: false

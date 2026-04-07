@@ -1,0 +1,7 @@
+interface:
+  display_name: "Frontend UI States"
+  short_description: "Cover loading, empty, and error states"
+  default_prompt: "Use $frontend-ui-states to review this screen for missing loading, empty, error, form, and responsive states."
+
+policy:
+  allow_implicit_invocation: false

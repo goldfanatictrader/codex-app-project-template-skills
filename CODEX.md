@@ -40,6 +40,16 @@ It combines:
 - `$repo-discovery` for unfamiliar repositories or inherited codebases
 - `$requirements-analysis` for discovery and planning
 - `$review-verification` for code review, regression checks, and release confidence
+- `$debugging-incident` for hard bugs and incidents
+- `$qa-e2e-release` for release gates and critical-flow verification
+- `$security-production-readiness` for hardening and pre-release risk review
+- `$observability-monitoring` for logs, metrics, and alerts
+- `$database-schema-migrations` for persistent data changes
+- `$api-contract-integration` for interface and compatibility work
+- `$auth-identity` for auth, RBAC, and account lifecycle changes
+- `$frontend-ui-states` for non-happy-path UX coverage
+- `$infra-environments` for environment and deployment topology
+- `$docs-sync-handover` for keeping memory and documentation aligned
 - `$backlog-management` and `$github-projects` for delivery tracking
 
 `$memory-bank` and `$project-developer` are also suitable as implicit core skills for normal project work.

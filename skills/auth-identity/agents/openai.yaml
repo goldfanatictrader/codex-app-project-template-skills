@@ -1,0 +1,7 @@
+interface:
+  display_name: "Auth Identity"
+  short_description: "Implement auth and access safely"
+  default_prompt: "Use $auth-identity to design or review authentication, session handling, roles, and identity-sensitive flows."
+
+policy:
+  allow_implicit_invocation: false

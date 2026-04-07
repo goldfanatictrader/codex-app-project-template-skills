@@ -1,0 +1,7 @@
+interface:
+  display_name: "Infra Environments"
+  short_description: "Review dev, staging, and prod setup"
+  default_prompt: "Use $infra-environments to map the environments, find parity gaps, and review configuration and deployment risks."
+
+policy:
+  allow_implicit_invocation: false

@@ -52,6 +52,10 @@ Prefer the shortest path that can solve the task.
 - For unfamiliar repos: `repo-discovery -> memory-bank -> project-developer`
 - For reviews: `memory-bank -> review-verification`
 - For planning from scratch: `requirements-analysis -> backlog-management -> timeline-roadmap`
+- For production bugs: `memory-bank -> debugging-incident`
+- For release checks: `review-verification -> qa-e2e-release -> security-production-readiness`
+- For API changes: `api-contract-integration -> project-developer -> review-verification`
+- For auth changes: `auth-identity -> project-developer -> security-production-readiness`
 
 Do not select many skills unless each one clearly adds value.
 
@@ -76,12 +80,25 @@ Choose the best fit from these patterns:
 | Containerization | `docker-setup` |
 | Pipeline and release flow | `cicd-delivery` |
 | End-to-end autonomous delivery | `autonomous-agent` |
+| Hard bug or production incident | `debugging-incident` |
+| Release gate and E2E confidence | `qa-e2e-release` |
+| Security and hardening review | `security-production-readiness` |
+| Logging, metrics, and alerts | `observability-monitoring` |
+| Schema changes and data rollout | `database-schema-migrations` |
+| API compatibility work | `api-contract-integration` |
+| Login, roles, and identity flows | `auth-identity` |
+| User-facing screen state coverage | `frontend-ui-states` |
+| Environment and deployment topology | `infra-environments` |
+| Memory and docs consistency | `docs-sync-handover` |
 
 ## Escalation Rules
 
 - If one skill fully covers the task, use only that skill.
 - If discovery is missing, do discovery before implementation.
 - If implementation is complete and confidence is needed, add `review-verification` after coding.
+- If the task touches production data, consider `database-schema-migrations`.
+- If the task changes auth or permissions, consider `auth-identity`.
+- If the task is approaching release, consider QA, security, and observability explicitly.
 - If the user asks for autonomous end-to-end ownership, prefer `autonomous-agent` over composing many PM skills.
 - If the task is still ambiguous after classification, ask one concise clarifying question or choose the least risky path.
 

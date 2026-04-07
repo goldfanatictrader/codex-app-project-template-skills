@@ -57,6 +57,11 @@ Typical prompts:
 - `Use $repo-discovery to inspect this repository before coding`
 - `Use $requirements-analysis to turn this idea into a BRD and user stories`
 - `Use $review-verification to review the latest diff for regressions`
+- `Use $debugging-incident to investigate a flaky production bug`
+- `Use $database-schema-migrations to plan a safe schema rollout`
+- `Use $api-contract-integration to review an API breaking change`
+- `Use $auth-identity to design roles and login flows`
+- `Use $frontend-ui-states to complete a screen beyond the happy path`
 - `Use $autonomous-agent to drive the project from planning to delivery`
 
 ## Session Rules

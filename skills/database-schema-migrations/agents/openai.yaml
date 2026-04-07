@@ -1,0 +1,7 @@
+interface:
+  display_name: "DB Schema Migrations"
+  short_description: "Plan safe schema and data changes"
+  default_prompt: "Use $database-schema-migrations to plan this schema change, rollout order, backfill strategy, and rollback safety."
+
+policy:
+  allow_implicit_invocation: false

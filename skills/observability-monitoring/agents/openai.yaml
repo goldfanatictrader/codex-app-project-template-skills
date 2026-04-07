@@ -1,0 +1,7 @@
+interface:
+  display_name: "Observability Monitoring"
+  short_description: "Define logs, metrics, and alerts"
+  default_prompt: "Use $observability-monitoring to define the minimum logging, metrics, tracing, and alerts needed for this app."
+
+policy:
+  allow_implicit_invocation: false

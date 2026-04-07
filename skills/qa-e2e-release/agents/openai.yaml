@@ -1,0 +1,7 @@
+interface:
+  display_name: "QA E2E Release"
+  short_description: "Verify release readiness and E2E risk"
+  default_prompt: "Use $qa-e2e-release to assess release scope, verify critical flows, and give a clear go or no-go recommendation."
+
+policy:
+  allow_implicit_invocation: false

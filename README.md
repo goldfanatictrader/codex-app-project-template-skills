@@ -66,16 +66,26 @@ memory/
 │   ├── backlog-management/
 │   ├── cicd-delivery/
 │   ├── coding-assistant/
+│   ├── database-schema-migrations/
+│   ├── debugging-incident/
+│   ├── docs-sync-handover/
 │   ├── docker-setup/
+│   ├── frontend-ui-states/
 │   ├── github-integration/
 │   ├── github-projects/
+│   ├── infra-environments/
 │   ├── memory-bank/
+│   ├── observability-monitoring/
+│   ├── api-contract-integration/
+│   ├── auth-identity/
 │   ├── project-developer/
 │   ├── project-initialization/
 │   ├── project-manager/
+│   ├── qa-e2e-release/
 │   ├── repo-discovery/
 │   ├── requirements-analysis/
 │   ├── review-verification/
+│   ├── security-production-readiness/
 │   ├── skill-router/
 │   ├── team-roles/
 │   ├── team-setup/
@@ -116,10 +126,20 @@ memory/
 - `github-projects`
 - `docker-setup`
 - `cicd-delivery`
+- `infra-environments`
+- `observability-monitoring`
+- `security-production-readiness`
+- `qa-e2e-release`
+- `debugging-incident`
+- `database-schema-migrations`
 
 ### Coding
 
 - `coding-assistant`
+- `api-contract-integration`
+- `auth-identity`
+- `frontend-ui-states`
+- `docs-sync-handover`
 
 ## Install Skills Into Codex
 
@@ -142,6 +162,9 @@ Examples:
 - `Use $project-developer to implement the next feature`
 - `Use $repo-discovery to map this codebase first`
 - `Use $review-verification to review the latest changes`
+- `Use $debugging-incident to diagnose a production issue`
+- `Use $qa-e2e-release to check release readiness`
+- `Use $security-production-readiness before shipping`
 - `Use $autonomous-agent to drive this project from planning to delivery`
 
 ## Recommended Workflow

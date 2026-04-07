@@ -1,0 +1,7 @@
+interface:
+  display_name: "Debugging Incident"
+  short_description: "Diagnose bugs and production incidents"
+  default_prompt: "Use $debugging-incident to reproduce the issue, narrow the fault domain, identify root cause, and propose the safest fix."
+
+policy:
+  allow_implicit_invocation: false
