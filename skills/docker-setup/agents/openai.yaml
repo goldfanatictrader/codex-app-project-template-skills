@@ -1,0 +1,7 @@
+interface:
+  display_name: "Docker Setup"
+  short_description: "Build production-ready Docker configs"
+  default_prompt: "Use $docker-setup to create or harden Dockerfiles, compose files, and container deployment patterns."
+
+policy:
+  allow_implicit_invocation: false

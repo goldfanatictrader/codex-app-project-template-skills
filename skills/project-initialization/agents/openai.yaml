@@ -1,0 +1,7 @@
+interface:
+  display_name: "Project Initialization"
+  short_description: "Bootstrap a project from zero"
+  default_prompt: "Use $project-initialization to set up the repository, planning artifacts, backlog, and sprint-ready structure."
+
+policy:
+  allow_implicit_invocation: false

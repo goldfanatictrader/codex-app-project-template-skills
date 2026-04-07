@@ -1,0 +1,7 @@
+interface:
+  display_name: "Requirements Analysis"
+  short_description: "Draft charter, BRD, and stories"
+  default_prompt: "Use $requirements-analysis to turn an idea into a charter, business requirements, and user stories."
+
+policy:
+  allow_implicit_invocation: false

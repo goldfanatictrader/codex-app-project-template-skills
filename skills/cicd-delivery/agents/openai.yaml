@@ -1,0 +1,7 @@
+interface:
+  display_name: "CI/CD Delivery"
+  short_description: "Create build, test, and deploy flows"
+  default_prompt: "Use $cicd-delivery to design or update the CI/CD pipeline, deployment workflow, and release checklist."
+
+policy:
+  allow_implicit_invocation: false

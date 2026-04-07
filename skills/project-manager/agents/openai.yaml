@@ -1,0 +1,7 @@
+interface:
+  display_name: "Project Manager"
+  short_description: "Plan, coordinate, and track delivery"
+  default_prompt: "Use $project-manager to manage planning, risk, coordination, and reporting for the current project phase."
+
+policy:
+  allow_implicit_invocation: false

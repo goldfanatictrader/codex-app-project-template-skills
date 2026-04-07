@@ -1,0 +1,7 @@
+interface:
+  display_name: "Backlog Management"
+  short_description: "Manage backlog, issues, and sprints"
+  default_prompt: "Use $backlog-management to turn requirements into backlog items, issues, milestones, and sprint-ready work."
+
+policy:
+  allow_implicit_invocation: false

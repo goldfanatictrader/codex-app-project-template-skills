@@ -1,0 +1,7 @@
+interface:
+  display_name: "Timeline Roadmap"
+  short_description: "Build phases, milestones, and roadmap"
+  default_prompt: "Use $timeline-roadmap to create a phased project roadmap with milestones, dependencies, and delivery targets."
+
+policy:
+  allow_implicit_invocation: false

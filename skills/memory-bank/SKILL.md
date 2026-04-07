@@ -1,0 +1,126 @@
+---
+name: memory-bank
+description: Memory Bank integration skill - ensures AI always reads and updates project memory for long-term continuity
+version: 1.0.0
+created: 2026-04-07
+author: User
+license: MIT
+compatibility:
+  - codex app
+categories:
+  - memory
+  - context
+  - continuity
+tags:
+  - memory-bank
+  - long-term-memory
+  - project-context
+  - session-continuity
+---
+
+# Memory Bank Integration Skill
+
+## Purpose
+
+This skill ensures the AI reads and updates the project memory bank at the start and end of every session, enabling true long-term memory across sessions.
+
+## Workflow
+
+### Session Start (MANDATORY)
+
+**FIRST ACTION**: Read project memory before ANY other action:
+
+```bash
+# Check if project has memory bank
+if [ -f "memory/PROJECT.md" ]; then
+  cat memory/PROJECT.md
+elif [ -f "PROJECT.md" ]; then
+  cat PROJECT.md
+fi
+```
+
+**If memory exists:**
+1. Read `memory/PROJECT.md` completely
+2. Check `memory/DECISIONS.md` for rationale
+3. Review current tasks and blockers
+4. Note last session date and next steps
+
+**If NO memory exists:**
+1. Inform user about memory bank pattern
+2. Ask if they want to create one (copy from template)
+3. OR proceed without memory if user declines
+
+### During Session
+
+**When making decisions:**
+- Document in memory/DECISIONS.md with full rationale
+- Include "why" not just "what"
+
+**When completing tasks:**
+- Update memory/PROJECT.md task status
+
+**When discovering important information:**
+- Add to appropriate memory section
+
+### Session End (MANDATORY)
+
+**BEFORE responding "done" or ending conversation:**
+
+Update memory bank with:
+1. New session entry in Session History
+2. Any new decisions made
+3. Updated task status
+4. Next steps for continuation
+
+```bash
+# Quick memory update commands
+# Add to session history in memory/PROJECT.md
+# Add to decisions in memory/DECISIONS.md if needed
+```
+
+## Memory Bank Location Priority
+
+1. `./memory/PROJECT.md` when working from a project root
+2. `./PROJECT.md` when working inside the memory repository directly
+3. `./docs/memory/PROJECT.md` only if the project stores memory there explicitly
+
+## Key Reminders
+
+- ALWAYS read memory at session start
+- ALWAYS update memory at session end
+- Include rationale in decisions
+- Mark tasks as complete
+- Provide clear "next steps"
+
+## Memory Bank Structure
+
+```
+memory/
+├── PROJECT.md       # Main memory (Quick Reference + Overview + History)
+├── DECISIONS.md    # Decision log with rationale
+├── MEETINGS.md     # Meeting notes
+├── GLOSSARY.md     # Project terminology
+├── context/        # Technical details
+│   ├── stack.md
+│   ├── architecture.md
+│   ├── conventions.md
+│   ├── workflows.md
+│   └── environments.md
+└── docs/          # Documentation
+    ├── README.md
+    ├── API.md
+    └── DEPLOYMENT.md
+```
+
+## Quick Reference
+
+| Action | Memory Update |
+|--------|---------------|
+| Start session | Read PROJECT.md + DECISIONS.md |
+| Make decision | Add to DECISIONS.md |
+| Complete task | Mark in PROJECT.md tasks |
+| End session | Add session history entry |
+
+---
+
+*Memory Bank Skill v1.0.0*

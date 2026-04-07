@@ -1,0 +1,7 @@
+interface:
+  display_name: "GitHub Projects"
+  short_description: "Run a Kanban workflow in GitHub"
+  default_prompt: "Use $github-projects to create or manage a GitHub Projects board and keep it synced with issue status."
+
+policy:
+  allow_implicit_invocation: false

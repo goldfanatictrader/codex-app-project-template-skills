@@ -1,0 +1,7 @@
+interface:
+  display_name: "Autonomous Agent"
+  short_description: "Drive a software project end to end"
+  default_prompt: "Use $autonomous-agent to assess the project phase, fill the highest-priority gap, and drive the work toward delivery."
+
+policy:
+  allow_implicit_invocation: false

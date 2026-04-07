@@ -1,0 +1,7 @@
+interface:
+  display_name: "GitHub Integration"
+  short_description: "Set up repos, labels, and milestones"
+  default_prompt: "Use $github-integration to configure repository settings, labels, milestones, and GitHub automation."
+
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Team Roles"
+  short_description: "Simulate delivery across team roles"
+  default_prompt: "Use $team-roles to decide which delivery role to act as and execute the work with that role's checklist."
+
+policy:
+  allow_implicit_invocation: false

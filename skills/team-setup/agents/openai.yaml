@@ -1,0 +1,7 @@
+interface:
+  display_name: "Team Setup"
+  short_description: "Define team structure and capacity"
+  default_prompt: "Use $team-setup to define project roles, responsibilities, staffing assumptions, and sprint capacity."
+
+policy:
+  allow_implicit_invocation: false
