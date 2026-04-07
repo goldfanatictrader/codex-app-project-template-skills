@@ -39,6 +39,7 @@ npm run dev
 | [Architecture](../context/architecture.md) | System architecture |
 | [Stack](../context/stack.md) | Technology stack |
 | [Conventions](../context/conventions.md) | Coding standards |
+| [AI Team GitHub Ops](./AI_TEAM_GITHUB_OPERATIONS.md) | Board fields, issue template, and PR traceability |
 | [API Reference](./API.md) | API documentation |
 
 ## Requirements

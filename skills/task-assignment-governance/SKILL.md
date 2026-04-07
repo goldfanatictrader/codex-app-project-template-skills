@@ -32,14 +32,17 @@ Use this skill when AI work must be assigned in a disciplined way rather than as
 
 1. Break scope into tasks small enough to own and review.
 2. Assign each task a logical AI worker and role.
-3. Define:
+3. Use `.github/ISSUE_TEMPLATE/ai-task.md` as the default task structure.
+4. Define:
    - owner;
    - reviewer;
    - dependency list;
    - blocker escalation path; and
    - definition of done.
-4. Separate parallel work from sequential work.
-5. Mark tasks that should not start until prerequisites are complete.
+5. Separate parallel work from sequential work.
+6. Mark tasks that should not start until prerequisites are complete.
+
+Use [docs/AI_TEAM_GITHUB_OPERATIONS.md](../../docs/AI_TEAM_GITHUB_OPERATIONS.md) when the GitHub board conventions need to be applied consistently.
 
 ## Output Format
 

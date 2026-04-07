@@ -46,6 +46,13 @@ Every handoff should include:
 3. State what is done, what is not done, and what must not be changed casually.
 4. Mark whether the handoff is to implementation, review, QA, docs, or release.
 
+When GitHub traceability is in use, include:
+
+- issue ID;
+- PR ID if one exists;
+- current board status; and
+- `Next Handoff` target from the task metadata.
+
 ## Rules
 
 - Handoff should be short, specific, and operational.

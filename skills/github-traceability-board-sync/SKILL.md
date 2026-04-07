@@ -54,6 +54,12 @@ Also use consistent:
 3. Sync task state changes to board movement and review state.
 4. Keep branch, PR, and issue references consistent.
 
+Use these repo artifacts directly:
+
+- `.github/ISSUE_TEMPLATE/ai-task.md`
+- `.github/pull_request_template.md`
+- `docs/AI_TEAM_GITHUB_OPERATIONS.md`
+
 ## Output Format
 
 Produce:
