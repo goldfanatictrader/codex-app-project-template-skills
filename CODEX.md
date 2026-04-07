@@ -34,6 +34,11 @@ It combines:
 ## Suggested Skill Entry Points
 
 - `$skill-router` when the correct workflow is not obvious
+- `$client-intake-normalizer` for raw client notes, chats, and meeting materials
+- `$solution-options-tradeoffs` for comparing possible directions
+- `$scope-convergence` for locking MVP boundaries
+- `$ai-project-manager-orchestrator` for AI-led delivery orchestration
+- `$ai-team-planner` for defining the logical AI team
 - `$memory-bank` for continuity across sessions
 - `$project-developer` for normal implementation work
 - `$autonomous-agent` for end-to-end project execution

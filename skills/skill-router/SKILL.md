@@ -52,6 +52,8 @@ Prefer the shortest path that can solve the task.
 - For unfamiliar repos: `repo-discovery -> memory-bank -> project-developer`
 - For reviews: `memory-bank -> review-verification`
 - For planning from scratch: `requirements-analysis -> backlog-management -> timeline-roadmap`
+- For raw client input: `client-intake-normalizer -> solution-options-tradeoffs -> scope-convergence`
+- For AI-team setup from client input: `client-intake-normalizer -> scope-convergence -> ai-project-manager-orchestrator -> ai-team-planner`
 - For production bugs: `memory-bank -> debugging-incident`
 - For release checks: `review-verification -> qa-e2e-release -> security-production-readiness`
 - For API changes: `api-contract-integration -> project-developer -> review-verification`
@@ -66,6 +68,11 @@ Choose the best fit from these patterns:
 | Situation | Preferred Skill |
 |-----------|-----------------|
 | Need current project state | `memory-bank` |
+| Need to normalize raw client materials | `client-intake-normalizer` |
+| Need to compare solution paths | `solution-options-tradeoffs` |
+| Need to lock MVP scope | `scope-convergence` |
+| Need an AI PM to run the project | `ai-project-manager-orchestrator` |
+| Need to design the AI team roster | `ai-team-planner` |
 | Need a repo map first | `repo-discovery` |
 | Normal implementation task | `project-developer` |
 | Code quality or regression review | `review-verification` |
@@ -94,6 +101,9 @@ Choose the best fit from these patterns:
 ## Escalation Rules
 
 - If one skill fully covers the task, use only that skill.
+- If the input is still raw client material, normalize before planning.
+- If brainstorming produced too many ideas, converge scope before assignment.
+- If the project should be run as an AI team, use the PM orchestrator and team planner explicitly.
 - If discovery is missing, do discovery before implementation.
 - If implementation is complete and confidence is needed, add `review-verification` after coding.
 - If the task touches production data, consider `database-schema-migrations`.

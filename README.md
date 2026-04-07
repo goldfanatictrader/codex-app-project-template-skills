@@ -62,7 +62,10 @@ memory/
 │   ├── CHARTER.md
 │   └── USER_STORIES.md
 ├── skills/
+│   ├── ai-project-manager-orchestrator/
+│   ├── ai-team-planner/
 │   ├── autonomous-agent/
+│   ├── client-intake-normalizer/
 │   ├── backlog-management/
 │   ├── cicd-delivery/
 │   ├── coding-assistant/
@@ -87,6 +90,8 @@ memory/
 │   ├── review-verification/
 │   ├── security-production-readiness/
 │   ├── skill-router/
+│   ├── solution-options-tradeoffs/
+│   ├── scope-convergence/
 │   ├── team-roles/
 │   ├── team-setup/
 │   └── timeline-roadmap/
@@ -109,6 +114,14 @@ memory/
 - `autonomous-agent`: end-to-end autonomous delivery mode
 - `repo-discovery`: fast technical map for unfamiliar repositories
 - `review-verification`: review and regression-focused verification pass
+
+### AI Team Orchestration
+
+- `client-intake-normalizer`
+- `solution-options-tradeoffs`
+- `scope-convergence`
+- `ai-project-manager-orchestrator`
+- `ai-team-planner`
 
 ### Project Management
 
@@ -158,6 +171,11 @@ Then start a new Codex thread. `memory-bank` and `project-developer` are configu
 Examples:
 
 - `Use $skill-router to choose the right workflow for this task`
+- `Use $client-intake-normalizer to structure these client notes`
+- `Use $solution-options-tradeoffs to compare solution paths`
+- `Use $scope-convergence to define the MVP boundary`
+- `Use $ai-project-manager-orchestrator to run this project as an AI PM`
+- `Use $ai-team-planner to define the AI team roster`
 - `Use $memory-bank before we continue`
 - `Use $project-developer to implement the next feature`
 - `Use $repo-discovery to map this codebase first`

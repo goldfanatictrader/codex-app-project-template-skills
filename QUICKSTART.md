@@ -52,6 +52,11 @@ Update:
 Typical prompts:
 
 - `Use $skill-router to decide which skill should handle this request`
+- `Use $client-intake-normalizer to turn this client discussion into a brief`
+- `Use $solution-options-tradeoffs to compare the best product or technical approaches`
+- `Use $scope-convergence to decide what belongs in the MVP`
+- `Use $ai-project-manager-orchestrator to run this as an AI-managed project`
+- `Use $ai-team-planner to size the AI team for this project`
 - `Use $memory-bank and tell me what to do next`
 - `Use $project-developer to implement authentication`
 - `Use $repo-discovery to inspect this repository before coding`

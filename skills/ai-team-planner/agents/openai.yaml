@@ -1,0 +1,7 @@
+interface:
+  display_name: "AI Team Planner"
+  short_description: "Design the logical AI team roster"
+  default_prompt: "Use $ai-team-planner to size the AI team, define role ownership, and recommend the first workstream assignments."
+
+policy:
+  allow_implicit_invocation: false

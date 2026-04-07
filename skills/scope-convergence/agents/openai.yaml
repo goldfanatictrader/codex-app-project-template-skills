@@ -1,0 +1,7 @@
+interface:
+  display_name: "Scope Convergence"
+  short_description: "Turn ideas into a buildable MVP scope"
+  default_prompt: "Use $scope-convergence to turn the brainstorm into an MVP boundary, deferred scope, non-goals, and execution-ready next steps."
+
+policy:
+  allow_implicit_invocation: false

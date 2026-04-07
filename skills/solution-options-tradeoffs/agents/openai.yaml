@@ -1,0 +1,7 @@
+interface:
+  display_name: "Solution Tradeoffs"
+  short_description: "Compare options before committing"
+  default_prompt: "Use $solution-options-tradeoffs to generate a few credible solution paths, compare the tradeoffs, and recommend the best direction."
+
+policy:
+  allow_implicit_invocation: false

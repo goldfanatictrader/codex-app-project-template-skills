@@ -1,0 +1,7 @@
+interface:
+  display_name: "Client Intake"
+  short_description: "Normalize raw client input into a brief"
+  default_prompt: "Use $client-intake-normalizer to turn these client notes into a structured brief with facts, assumptions, questions, and next planning steps."
+
+policy:
+  allow_implicit_invocation: false

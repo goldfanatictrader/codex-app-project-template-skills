@@ -1,0 +1,7 @@
+interface:
+  display_name: "AI PM Orchestrator"
+  short_description: "Run the project as the AI PM"
+  default_prompt: "Use $ai-project-manager-orchestrator to take the lead, classify the phase, choose the required AI roles, and sequence the next delivery workstreams."
+
+policy:
+  allow_implicit_invocation: false
