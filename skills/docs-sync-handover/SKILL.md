@@ -39,6 +39,35 @@ Use this skill to keep documentation and project memory aligned with reality.
 - `docs/ONBOARDING.md`
 - roadmap and backlog artifacts
 
+## Output Contract
+
+Use this documentation sync packet:
+
+```md
+# Documentation Sync Packet
+
+## Change Summary
+- What changed in the project
+
+## Docs Updated
+- File
+- Reason updated
+
+## Docs Still Out Of Sync
+- File
+- Missing update
+
+## Handover Note
+- What the next owner should know
+
+## Remaining Risk
+- Risk 1
+- Risk 2
+
+## Recommended Next Step
+- Usually: `$memory-bank` or `$cross-agent-handover`
+```
+
 ## Output Format
 
 Report:
@@ -53,3 +82,4 @@ Report:
 - Do not update docs mechanically if behavior is still uncertain.
 - Prefer concise, high-signal updates over long prose.
 - Handover should tell the next owner where to continue and what still carries risk.
+- The handover note should point to exact docs or files, not just broad areas.

@@ -39,6 +39,43 @@ Use this skill to make systems understandable under real load and failure.
 - health endpoints; and
 - alerting for production-impacting failures.
 
+## Output Contract
+
+Use this observability packet:
+
+```md
+# Observability Coverage Packet
+
+## Critical Flows
+- Flow 1
+- Flow 2
+
+## Signal Matrix
+| Flow | Logs | Metrics | Traces | Alerts | Owner |
+|------|------|---------|--------|--------|-------|
+| login | yes/no | yes/no | yes/no | yes/no | ... |
+
+## Health Checks
+- Readiness signal
+- Liveness signal
+- Dependency signal
+
+## Dashboard Needs
+- Dashboard 1
+- Dashboard 2
+
+## Alerting Gaps
+- Gap 1
+- Gap 2
+
+## Blind Spots
+- Blind spot 1
+- Blind spot 2
+
+## Recommended Next Step
+- Usually: `$debugging-incident`, `$infra-environments`, or `$security-production-readiness`
+```
+
 ## Output Format
 
 Report:
@@ -54,3 +91,4 @@ Report:
 - Prefer signals tied to user impact.
 - Avoid logging secrets or sensitive payloads.
 - Good observability is for diagnosis, not just dashboards.
+- Every output should identify who owns the alert or signal when it fires.

@@ -39,6 +39,51 @@ Use this skill when user identity and access control are core to the task.
 - OAuth or third-party identity trust boundaries; and
 - user enumeration or unsafe error messaging.
 
+## Output Contract
+
+Use this auth review packet:
+
+```md
+# Auth Identity Packet
+
+## Auth Model
+- Session or token model
+- Identity provider
+
+## Actors And Roles
+| Actor | Role | Can Do | Cannot Do |
+|-------|------|--------|-----------|
+| user | member | ... | ... |
+
+## Sensitive Flows
+- Login
+- Logout
+- Reset password
+- Invite or signup
+- Role change
+
+## Session And Authorization Boundaries
+- Identity boundary
+- Session boundary
+- Authorization boundary
+
+## Missing Safeguards
+- Missing control 1
+- Missing control 2
+
+## Risky Cases
+- Enumeration risk
+- Privilege escalation risk
+- Session fixation or token leakage risk
+
+## Recommended Next Changes
+- Change 1
+- Change 2
+
+## Recommended Next Step
+- Usually: `$security-production-readiness`, `$project-developer`, or `$review-verification`
+```
+
 ## Output Format
 
 Report:
@@ -54,3 +99,4 @@ Report:
 - Separate identity, session, and authorization concerns.
 - Treat permission bugs as high severity by default.
 - Avoid ambiguous role logic.
+- Every auth review should name the authorization boundary explicitly.

@@ -39,6 +39,44 @@ Use this skill when environment layout and deployment safety matter.
 - deployment ownership; and
 - rollback path.
 
+## Output Contract
+
+Use this environment packet:
+
+```md
+# Environment Topology Packet
+
+## Environment Map
+| Environment | Purpose | Owner | Deploy Path |
+|-------------|---------|-------|-------------|
+| local | development | ... | ... |
+| staging | pre-release | ... | ... |
+| production | live traffic | ... | ... |
+
+## Config And Secret Flow
+- How config enters each environment
+- How secrets are injected
+
+## Parity Gaps
+- Gap 1
+- Gap 2
+
+## Deployment Dependencies
+- Dependency 1
+- Dependency 2
+
+## Rollback And Recovery Notes
+- Rollback method
+- Recovery assumption
+
+## Recommended Cleanup
+- Cleanup 1
+- Cleanup 2
+
+## Recommended Next Step
+- Usually: `$cicd-delivery`, `$security-production-readiness`, or `$qa-e2e-release`
+```
+
 ## Output Format
 
 Report:
@@ -54,3 +92,4 @@ Report:
 - Environment differences should be intentional, not accidental.
 - Prefer explicit configuration boundaries.
 - Call out where staging is not representative enough for release confidence.
+- Every output should identify whether staging is trustworthy enough for release validation.
