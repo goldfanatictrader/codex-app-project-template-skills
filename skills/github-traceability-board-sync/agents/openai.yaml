@@ -1,0 +1,7 @@
+interface:
+  display_name: "GitHub Traceability"
+  short_description: "Sync AI ownership into GitHub metadata"
+  default_prompt: "Use $github-traceability-board-sync to define how AI worker identity, status, and ownership should appear in GitHub issues, PRs, and project boards."
+
+policy:
+  allow_implicit_invocation: false

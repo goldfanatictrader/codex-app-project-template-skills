@@ -39,6 +39,9 @@ It combines:
 - `$scope-convergence` for locking MVP boundaries
 - `$ai-project-manager-orchestrator` for AI-led delivery orchestration
 - `$ai-team-planner` for defining the logical AI team
+- `$task-assignment-governance` for owned tasks, reviewers, and dependencies
+- `$github-traceability-board-sync` for GitHub issue and board visibility
+- `$cross-agent-handover` for structured transitions between AI roles
 - `$memory-bank` for continuity across sessions
 - `$project-developer` for normal implementation work
 - `$autonomous-agent` for end-to-end project execution

@@ -57,6 +57,9 @@ Typical prompts:
 - `Use $scope-convergence to decide what belongs in the MVP`
 - `Use $ai-project-manager-orchestrator to run this as an AI-managed project`
 - `Use $ai-team-planner to size the AI team for this project`
+- `Use $task-assignment-governance to define AI task ownership and dependencies`
+- `Use $github-traceability-board-sync to map AI worker identity into GitHub`
+- `Use $cross-agent-handover to prepare the next AI worker handoff`
 - `Use $memory-bank and tell me what to do next`
 - `Use $project-developer to implement authentication`
 - `Use $repo-discovery to inspect this repository before coding`

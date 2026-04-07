@@ -1,0 +1,7 @@
+interface:
+  display_name: "Cross Agent Handover"
+  short_description: "Transfer work cleanly between AI roles"
+  default_prompt: "Use $cross-agent-handover to prepare a compact handoff with completed work, decisions, risks, and the exact next action for the next AI role."
+
+policy:
+  allow_implicit_invocation: false

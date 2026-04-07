@@ -69,11 +69,13 @@ memory/
 │   ├── backlog-management/
 │   ├── cicd-delivery/
 │   ├── coding-assistant/
+│   ├── cross-agent-handover/
 │   ├── database-schema-migrations/
 │   ├── debugging-incident/
 │   ├── docs-sync-handover/
 │   ├── docker-setup/
 │   ├── frontend-ui-states/
+│   ├── github-traceability-board-sync/
 │   ├── github-integration/
 │   ├── github-projects/
 │   ├── infra-environments/
@@ -92,6 +94,7 @@ memory/
 │   ├── skill-router/
 │   ├── solution-options-tradeoffs/
 │   ├── scope-convergence/
+│   ├── task-assignment-governance/
 │   ├── team-roles/
 │   ├── team-setup/
 │   └── timeline-roadmap/
@@ -122,6 +125,9 @@ memory/
 - `scope-convergence`
 - `ai-project-manager-orchestrator`
 - `ai-team-planner`
+- `task-assignment-governance`
+- `github-traceability-board-sync`
+- `cross-agent-handover`
 
 ### Project Management
 
@@ -176,6 +182,9 @@ Examples:
 - `Use $scope-convergence to define the MVP boundary`
 - `Use $ai-project-manager-orchestrator to run this project as an AI PM`
 - `Use $ai-team-planner to define the AI team roster`
+- `Use $task-assignment-governance to turn the plan into owned AI tasks`
+- `Use $github-traceability-board-sync to reflect AI ownership in GitHub`
+- `Use $cross-agent-handover to hand work from one AI role to another`
 - `Use $memory-bank before we continue`
 - `Use $project-developer to implement the next feature`
 - `Use $repo-discovery to map this codebase first`

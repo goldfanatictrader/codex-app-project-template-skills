@@ -54,6 +54,8 @@ Prefer the shortest path that can solve the task.
 - For planning from scratch: `requirements-analysis -> backlog-management -> timeline-roadmap`
 - For raw client input: `client-intake-normalizer -> solution-options-tradeoffs -> scope-convergence`
 - For AI-team setup from client input: `client-intake-normalizer -> scope-convergence -> ai-project-manager-orchestrator -> ai-team-planner`
+- For turning an AI plan into managed execution: `ai-project-manager-orchestrator -> task-assignment-governance -> github-traceability-board-sync`
+- For handing work between AI roles: `cross-agent-handover`
 - For production bugs: `memory-bank -> debugging-incident`
 - For release checks: `review-verification -> qa-e2e-release -> security-production-readiness`
 - For API changes: `api-contract-integration -> project-developer -> review-verification`
@@ -73,6 +75,9 @@ Choose the best fit from these patterns:
 | Need to lock MVP scope | `scope-convergence` |
 | Need an AI PM to run the project | `ai-project-manager-orchestrator` |
 | Need to design the AI team roster | `ai-team-planner` |
+| Need to break scope into owned AI tasks | `task-assignment-governance` |
+| Need AI ownership visible in GitHub | `github-traceability-board-sync` |
+| Need to pass work between AI roles | `cross-agent-handover` |
 | Need a repo map first | `repo-discovery` |
 | Normal implementation task | `project-developer` |
 | Code quality or regression review | `review-verification` |
@@ -104,6 +109,9 @@ Choose the best fit from these patterns:
 - If the input is still raw client material, normalize before planning.
 - If brainstorming produced too many ideas, converge scope before assignment.
 - If the project should be run as an AI team, use the PM orchestrator and team planner explicitly.
+- If work is about to be assigned across multiple AI roles, apply assignment governance.
+- If GitHub visibility matters, add traceability sync before or during execution.
+- If one AI role is finishing and another must continue, require a handoff step.
 - If discovery is missing, do discovery before implementation.
 - If implementation is complete and confidence is needed, add `review-verification` after coding.
 - If the task touches production data, consider `database-schema-migrations`.

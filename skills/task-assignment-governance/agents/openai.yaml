@@ -1,0 +1,7 @@
+interface:
+  display_name: "Task Assignment"
+  short_description: "Define AI task ownership and dependencies"
+  default_prompt: "Use $task-assignment-governance to break this scope into owned tasks with reviewers, dependencies, and escalation rules."
+
+policy:
+  allow_implicit_invocation: false
