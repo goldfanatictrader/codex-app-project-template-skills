@@ -40,6 +40,41 @@ Use this skill when the question is whether a change is ready to ship.
 - rollback or recovery readiness; and
 - environment-specific release checks.
 
+## Output Contract
+
+Use this release gate packet:
+
+```md
+# Release Gate Packet
+
+## Release Scope
+- What is being shipped
+
+## Checks Run
+- Unit
+- Integration
+- Smoke
+- E2E
+
+## Confirmed Blockers
+- Blocker 1
+- Blocker 2
+
+## Missing Evidence
+- Missing check 1
+- Missing check 2
+
+## Residual Risk
+- Risk 1
+- Risk 2
+
+## Recommendation
+- Go / no-go / go-with-risk
+
+## Recommended Next Step
+- Usually: `$security-production-readiness`, `$review-verification`, or `$docs-sync-handover`
+```
+
 ## Output Format
 
 Report:
@@ -56,3 +91,4 @@ Report:
 - Distinguish confirmed blockers from missing evidence.
 - Prefer high-value user journeys over exhaustive test lists.
 - If E2E coverage does not exist, say what smoke coverage is still needed.
+- The release recommendation must explicitly state whether the risk is accepted or unresolved.

@@ -133,6 +133,8 @@ Primary AI-team sequence:
 
 `client-intake-normalizer -> solution-options-tradeoffs -> scope-convergence -> ai-project-manager-orchestrator -> ai-team-planner -> task-assignment-governance -> github-traceability-board-sync -> cross-agent-handover`
 
+Full active flow reference: [docs/AI_TEAM_SKILL_FLOW.md](docs/AI_TEAM_SKILL_FLOW.md)
+
 ### Project Management
 
 - `project-manager`
@@ -165,6 +167,8 @@ These are now mostly supporting or legacy PM skills around the AI-team core flow
 - `auth-identity`
 - `frontend-ui-states`
 - `docs-sync-handover`
+
+The active skills are designed to pass structured output packets between one another rather than relying on loose prose alone.
 
 ## Install Skills Into Codex
 

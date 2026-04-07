@@ -20,6 +20,22 @@ tags:
 
 # Project Developer Skill
 
+## Position In The AI Team Stack
+
+This is the primary implementation skill.
+
+Use it after:
+
+1. `memory-bank`
+2. `repo-discovery` when the repository is unfamiliar
+3. any domain skill that clarifies the work first, such as `api-contract-integration`, `auth-identity`, or `frontend-ui-states`
+
+Hand off to:
+
+4. `review-verification`
+5. `docs-sync-handover`
+6. `cross-agent-handover` when another logical AI role must continue
+
 Complete workflow skill that combines memory bank integration with coding best practices.
 
 ## Session Workflow
@@ -138,6 +154,40 @@ Complete workflow skill that combines memory bank integration with coding best p
 ❌ Write code without error handling
 ❌ Skip lint/type check before finishing
 
+## Output Contract
+
+Use this implementation packet:
+
+```md
+# Implementation Packet
+
+## Task Scope
+- What was implemented
+
+## Files Changed
+- File 1
+- File 2
+
+## Verification Run
+- Lint
+- Typecheck
+- Tests
+
+## Decisions Or Deviations
+- Decision 1
+- Deviation from plan 1
+
+## Residual Risks
+- Risk 1
+- Risk 2
+
+## Docs Or Memory Impact
+- Which docs or memory files must change
+
+## Recommended Next Step
+- Usually: `$review-verification`, `$docs-sync-handover`, or `$cross-agent-handover`
+```
+
 ## Memory Bank Structure
 
 ```
@@ -168,6 +218,11 @@ memory/
 | Complete task | Update task in PROJECT.md |
 | Find bug | Document in Known Issues |
 | End session | Add session history + update Quick Reference |
+
+## Rules
+
+- Do not treat implementation as complete until verification and memory impact are both considered.
+- If a domain-specific risk appears during coding, hand off to the relevant specialist skill rather than improvising silently.
 
 ## Example Session
 

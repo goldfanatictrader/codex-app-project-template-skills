@@ -49,6 +49,10 @@ Update:
 
 ## 5. Use It In Codex
 
+Main AI-team flow reference:
+
+- `docs/AI_TEAM_SKILL_FLOW.md`
+
 Typical prompts:
 
 - `Use $skill-router to decide which skill should handle this request`

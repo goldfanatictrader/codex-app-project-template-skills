@@ -44,6 +44,36 @@ Use this skill when AI work must be assigned in a disciplined way rather than as
 
 Use [docs/AI_TEAM_GITHUB_OPERATIONS.md](../../docs/AI_TEAM_GITHUB_OPERATIONS.md) when the GitHub board conventions need to be applied consistently.
 
+## Output Contract
+
+Use this assignment packet:
+
+```md
+# Assignment Packet
+
+## Task Table
+| Task | Owner | Reviewer | Depends On | Start Condition | Next Handoff |
+|------|-------|----------|------------|-----------------|--------------|
+| ... | ... | ... | ... | ... | ... |
+
+## Dependency Map
+- Task A -> Task B
+- Task C -> Task D
+
+## Status Flow
+- Ready
+- In Progress
+- In Review
+- In QA
+
+## Escalation Rules
+- If blocked by contract -> AI PM
+- If blocked by infra -> infra owner
+
+## Recommended Next Step
+- Usually: `$github-traceability-board-sync`
+```
+
 ## Output Format
 
 Produce:
@@ -59,3 +89,4 @@ Produce:
 - Do not create tasks that are too broad to review.
 - Every task should have exactly one primary logical owner.
 - Dependencies should be explicit, not implied.
+- Every task should expose a next handoff target when applicable.

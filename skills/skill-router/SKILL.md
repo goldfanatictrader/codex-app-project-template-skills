@@ -51,15 +51,18 @@ Prefer the shortest path that can solve the task.
 - For normal coding work: `memory-bank -> project-developer`
 - For unfamiliar repos: `repo-discovery -> memory-bank -> project-developer`
 - For reviews: `memory-bank -> review-verification`
-- For planning from scratch: `requirements-analysis -> backlog-management -> timeline-roadmap`
+- For planning from scratch: `client-intake-normalizer -> solution-options-tradeoffs -> scope-convergence -> ai-project-manager-orchestrator`
 - For raw client input: `client-intake-normalizer -> solution-options-tradeoffs -> scope-convergence`
-- For AI-team setup from client input: `client-intake-normalizer -> scope-convergence -> ai-project-manager-orchestrator -> ai-team-planner`
-- For turning an AI plan into managed execution: `ai-project-manager-orchestrator -> task-assignment-governance -> github-traceability-board-sync`
+- For AI-team setup from client input: `client-intake-normalizer -> solution-options-tradeoffs -> scope-convergence -> ai-project-manager-orchestrator -> ai-team-planner`
+- For turning an AI plan into managed execution: `ai-project-manager-orchestrator -> ai-team-planner -> backlog-management -> task-assignment-governance -> github-traceability-board-sync`
 - For handing work between AI roles: `cross-agent-handover`
 - For production bugs: `memory-bank -> debugging-incident`
 - For release checks: `review-verification -> qa-e2e-release -> security-production-readiness`
 - For API changes: `api-contract-integration -> project-developer -> review-verification`
 - For auth changes: `auth-identity -> project-developer -> security-production-readiness`
+- For schema changes: `database-schema-migrations -> project-developer -> review-verification`
+- For environment or deploy work: `infra-environments -> cicd-delivery -> qa-e2e-release`
+- For documentation closure: `docs-sync-handover -> memory-bank`
 
 Do not select many skills unless each one clearly adds value.
 
@@ -131,9 +134,33 @@ When routing, provide:
 
 Keep the output short. The purpose is to move into execution quickly.
 
+## Output Contract
+
+Use this routing packet:
+
+```md
+# Routing Packet
+
+## Task Classification
+- planning / implementation / review / incident / release / docs / infra
+
+## Selected Skill Path
+1. Skill 1
+2. Skill 2
+3. Skill 3
+
+## Why This Path
+- Reason 1
+- Reason 2
+
+## Immediate Next Action
+- Exact first move
+```
+
 ## Rules
 
 - Route first, then work.
 - Prefer fewer skills over more skills.
 - Avoid redundant overlaps such as `coding-assistant` plus `project-developer` unless there is a clear reason.
 - Use `memory-bank` in most project-continuity tasks.
+- Prefer the AI-team flow over legacy PM skills unless a formal artifact is specifically requested.

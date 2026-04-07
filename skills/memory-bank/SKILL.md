@@ -20,6 +20,15 @@ tags:
 
 # Memory Bank Integration Skill
 
+## Position In The AI Team Stack
+
+This is a primary continuity skill.
+
+Use it:
+
+1. before almost any project work begins; and
+2. before `docs-sync-handover` or `cross-agent-handover` ends a session.
+
 ## Purpose
 
 This skill ensures the AI reads and updates the project memory bank at the start and end of every session, enabling true long-term memory across sessions.
@@ -92,6 +101,37 @@ Update memory bank with:
 - Mark tasks as complete
 - Provide clear "next steps"
 
+## Output Contract
+
+Use this continuity packet:
+
+```md
+# Continuity Packet
+
+## Current State
+- Current focus
+- Last meaningful session
+
+## Active Tasks
+- Task 1
+- Task 2
+
+## Blockers
+- Blocker 1
+- Blocker 2
+
+## Active Decisions
+- Decision 1
+- Decision 2
+
+## Memory Updates Made
+- PROJECT.md updated
+- DECISIONS.md updated
+
+## Next Action
+- Exact next step for the next session or worker
+```
+
 ## Memory Bank Structure
 
 ```
@@ -120,6 +160,11 @@ memory/
 | Make decision | Add to DECISIONS.md |
 | Complete task | Mark in PROJECT.md tasks |
 | End session | Add session history entry |
+
+## Rules
+
+- If memory conflicts with the codebase, call out the mismatch instead of silently trusting one side.
+- The next action must be concrete enough that another AI worker can resume immediately.
 
 ---
 

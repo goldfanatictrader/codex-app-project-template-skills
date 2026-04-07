@@ -60,6 +60,35 @@ Use these repo artifacts directly:
 - `.github/pull_request_template.md`
 - `docs/AI_TEAM_GITHUB_OPERATIONS.md`
 
+## Output Contract
+
+Use this traceability packet:
+
+```md
+# Traceability Packet
+
+## Required Fields
+- Field 1
+- Field 2
+
+## Naming And Metadata Rules
+- Branch naming
+- PR body convention
+- Commit trailer convention
+
+## Status Sync Rules
+- Issue opened -> Backlog
+- Work started -> In Progress
+- PR opened -> In Review
+
+## Traceability Gaps
+- Gap 1
+- Gap 2
+
+## Recommended Next Step
+- Usually: `$cross-agent-handover` or active execution skills
+```
+
 ## Output Format
 
 Produce:
@@ -74,3 +103,4 @@ Produce:
 - One shared GitHub account is fine, but logical AI identity must still be explicit.
 - GitHub should show who logically owns the task, not just who pushed the commit.
 - Traceability should be consistent across issue, board, branch, and PR.
+- If board metadata and issue metadata disagree, call out the mismatch directly.

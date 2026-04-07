@@ -64,6 +64,8 @@ Primary AI-team path:
 
 `$client-intake-normalizer -> $solution-options-tradeoffs -> $scope-convergence -> $ai-project-manager-orchestrator -> $ai-team-planner -> $task-assignment-governance -> $github-traceability-board-sync -> $cross-agent-handover`
 
+The canonical flow and packet handoff model are documented in `docs/AI_TEAM_SKILL_FLOW.md`.
+
 Legacy or supporting skills:
 
 - `$autonomous-agent`

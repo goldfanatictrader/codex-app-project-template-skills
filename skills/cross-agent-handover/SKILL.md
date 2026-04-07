@@ -53,8 +53,47 @@ When GitHub traceability is in use, include:
 - current board status; and
 - `Next Handoff` target from the task metadata.
 
+## Output Contract
+
+Use this handoff packet:
+
+```md
+# Handoff Packet
+
+## Objective
+- What this slice was trying to achieve
+
+## Completed Work
+- Done item 1
+- Done item 2
+
+## Relevant Artifacts
+- Files
+- Issue ID
+- PR ID
+
+## Decisions Made
+- Decision 1
+- Decision 2
+
+## Risks Or Blockers
+- Risk 1
+- Blocker 1
+
+## Current Status
+- Board status
+- Review state if relevant
+
+## Exact Next Action
+- What the next worker should do first
+
+## Next Handoff Target
+- Receiving AI worker or role
+```
+
 ## Rules
 
 - Handoff should be short, specific, and operational.
 - Never hide uncertainty; call it out directly.
 - A good handoff lets the next worker start immediately.
+- The exact next action should be immediately executable, not strategic commentary.

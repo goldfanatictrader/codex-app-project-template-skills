@@ -92,9 +92,38 @@ For review tasks, prefer:
 
 If there are no findings, say so explicitly and still mention any verification gaps.
 
+## Output Contract
+
+Use this verification packet:
+
+```md
+# Verification Packet
+
+## Findings
+- Severity
+- What is wrong
+- Why it matters
+- Where it lives
+
+## Open Questions
+- Question 1
+- Question 2
+
+## Verification Run
+- Commands or checks run
+- Checks not run
+
+## Overall Assessment
+- Safe / risky / blocked
+
+## Recommended Next Step
+- Usually: `$project-developer`, `$qa-e2e-release`, or `$security-production-readiness`
+```
+
 ## Rules
 
 - Findings come before summary.
 - Do not pad the result with style-only commentary.
 - Distinguish confirmed problems from plausible risks.
 - When evidence is partial, say what was checked and what was not.
+- Verification output should separate confirmed blockers from missing evidence.

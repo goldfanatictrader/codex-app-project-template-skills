@@ -40,6 +40,41 @@ Use this skill when changing persistent data structures.
 - backfill safety; and
 - rollback realism.
 
+## Output Contract
+
+Use this migration packet:
+
+```md
+# Migration Packet
+
+## Schema Change Summary
+- What changes
+
+## Compatibility Strategy
+- Backward compatibility
+- Forward compatibility
+
+## Rollout Plan
+- Expand
+- Migrate
+- Contract
+
+## Backfill Plan
+- Data rewrite steps
+- Safety controls
+
+## Rollback Plan
+- What can be rolled back
+- What cannot be rolled back safely
+
+## Integrity Checks
+- Check 1
+- Check 2
+
+## Recommended Next Step
+- Usually: `$project-developer`, `$review-verification`, or `$qa-e2e-release`
+```
+
 ## Output Format
 
 Report:
@@ -55,3 +90,4 @@ Report:
 - Prefer expand and contract migrations for production systems.
 - Do not assume rollback is trivial when data has been rewritten.
 - Call out destructive changes explicitly.
+- The packet should say directly whether rollback is realistic or only partial.

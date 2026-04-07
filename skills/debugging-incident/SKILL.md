@@ -40,6 +40,41 @@ Use this skill for defects that need diagnosis, not just implementation.
 - Note whether the issue is deterministic, intermittent, or environment-specific.
 - Separate symptom, trigger, and root cause.
 
+## Output Contract
+
+Use this incident packet:
+
+```md
+# Incident Packet
+
+## Observed Failure
+- Symptom
+- Trigger
+
+## Impact And Urgency
+- User impact
+- Severity
+
+## Reproduction Status
+- Reproduced / not reproduced
+- Smallest known repro
+
+## Likely Root Cause
+- Evidence-backed cause
+
+## Containment Or Workaround
+- Short-term action
+
+## Recommended Fix
+- Safe fix path
+
+## Regression Guard
+- Test or monitoring addition
+
+## Recommended Next Step
+- Usually: `$project-developer`, `$review-verification`, or `$cross-agent-handover`
+```
+
 ## Output Format
 
 Report:
@@ -57,3 +92,4 @@ Report:
 - Do not call something root cause without evidence.
 - If reproduction is missing, say what makes it hard.
 - If rollback is safer than a hotfix, say so clearly.
+- Every incident packet should separate symptom, trigger, and root cause explicitly.

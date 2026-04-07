@@ -41,6 +41,36 @@ Use this skill to check whether the app is safe enough to expose to real users.
 - backup and restore posture; and
 - dependency or container vulnerabilities.
 
+## Output Contract
+
+Use this security gate packet:
+
+```md
+# Security Gate Packet
+
+## Critical Risks
+- Risk 1
+- Risk 2
+
+## Medium Risks
+- Risk 1
+- Risk 2
+
+## Existing Controls
+- Control 1
+- Control 2
+
+## Missing Safeguards
+- Safeguard 1
+- Safeguard 2
+
+## Release Recommendation
+- Block release / allow with fixes / allow with accepted risk
+
+## Recommended Next Step
+- Usually: `$project-developer`, `$auth-identity`, or `$qa-e2e-release`
+```
+
 ## Output Format
 
 Report:
@@ -56,3 +86,4 @@ Report:
 - Prioritize exploitable risk over theoretical style issues.
 - If evidence is incomplete, state the uncertainty explicitly.
 - Prefer concrete remediations over generic “secure this” advice.
+- The release recommendation must tie back to exploitable risk, not vague concern.

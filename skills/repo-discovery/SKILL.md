@@ -83,6 +83,42 @@ Call out areas that will slow future work, for example:
 - large legacy directories; or
 - multiple apps sharing one repo.
 
+## Output Contract
+
+Use this repository map packet:
+
+```md
+# Repository Map Packet
+
+## Repository Shape
+- single package / monorepo / multi-app
+
+## Primary Stack
+- Frameworks
+- Languages
+- Tooling
+
+## Important Commands
+- Run
+- Build
+- Lint
+- Typecheck
+- Test
+
+## Key Entry Points
+- App entry
+- API entry
+- Worker or job entry
+- Migration or schema location
+
+## Risk Areas
+- Risk 1
+- Risk 2
+
+## Recommended Next Step
+- Usually: `$memory-bank`, `$project-developer`, or a domain skill
+```
+
 ## Output Format
 
 When reporting discovery, include:
@@ -102,3 +138,4 @@ Keep it compact. The point is to accelerate follow-up work, not to dump the whol
 - Mention uncertainty explicitly when the repo is ambiguous.
 - Avoid deep reads of unrelated files before the high-level map is clear.
 - Hand off to a more specific skill after discovery if the next task is known.
+- The discovery result should make the next skill obvious.

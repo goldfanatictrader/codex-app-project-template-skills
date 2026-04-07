@@ -1,6 +1,6 @@
 ---
 name: coding-assistant
-description: General coding assistant skill - best practices, code review, refactoring, and implementation guidelines
+description: Use when generic coding guidance, refactoring heuristics, or implementation standards are needed, but prefer project-developer for normal project execution.
 version: 1.0.0
 created: 2026-04-07
 author: User
@@ -20,6 +20,12 @@ tags:
 ---
 
 # Coding Assistant Skill
+
+## Status
+
+Supporting generic coding skill.
+
+Prefer `project-developer` for normal project work and use this skill when broader coding heuristics or refactoring guidance are needed.
 
 ## Core Principles
 
@@ -225,6 +231,35 @@ type(scope): description
 Types: feat, fix, docs, style, refactor, test, chore
 ```
 
+## Output Contract
+
+Use this coding guidance packet:
+
+```md
+# Coding Guidance Packet
+
+## Problem Framing
+- What should change
+
+## Relevant Existing Patterns
+- Pattern 1
+- Pattern 2
+
+## Recommended Approach
+- Approach 1
+- Approach 2
+
+## Refactoring Or Quality Risks
+- Risk 1
+- Risk 2
+
+## Verification Expectations
+- What should be tested or checked
+
+## Recommended Next Step
+- Usually: `$project-developer` or `$review-verification`
+```
+
 ## Project Memory Integration
 
 ### Before Writing Code
@@ -278,6 +313,11 @@ npm test
 # Run all checks
 npm run check
 ```
+
+## Rules
+
+- Prefer repo-specific conventions over generic best-practice advice.
+- If the task is already well-scoped for direct implementation, hand off to `project-developer`.
 
 ---
 

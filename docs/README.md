@@ -40,6 +40,7 @@ npm run dev
 | [Stack](../context/stack.md) | Technology stack |
 | [Conventions](../context/conventions.md) | Coding standards |
 | [AI Team GitHub Ops](./AI_TEAM_GITHUB_OPERATIONS.md) | Board fields, issue template, and PR traceability |
+| [AI Team Skill Flow](./AI_TEAM_SKILL_FLOW.md) | Main skill chain, output packets, and legacy boundaries |
 | [API Reference](./API.md) | API documentation |
 
 ## Requirements
