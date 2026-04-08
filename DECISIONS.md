@@ -53,6 +53,29 @@ When making a significant decision:
 
 ## Active Decisions
 
+### D000 - 2026-04-08: Use Skill Router As The Fresh-Project Entry Point
+
+**Status**: Active
+**Made By**: codex
+**Related**:
+
+**Decision**: `$skill-router` should bootstrap `./memory/` automatically when a project has neither `memory/PROJECT.md` nor `PROJECT.md`.
+
+**Context**: The template should record project-specific work from the first skill invocation without making the user perform a separate manual memory setup step.
+
+**Alternatives Considered**:
+| Alternative | Pros | Cons | Why Rejected |
+|-------------|------|------|--------------|
+| Manual copy step only | Explicit and simple | Easy to skip, breaks continuity in new projects | Too much friction |
+| `memory-bank` only bootstraps | Keeps router pure | First user call may still start without memory | Not enough coverage |
+| `skill-router` as entry point (Chosen) | Natural first call, guarantees memory exists before routing | Adds a small bootstrap side effect to routing | Best fit for the desired workflow |
+
+**Consequences**:
+- **Positive**: New projects get `memory/` automatically and start recording session history immediately.
+- **Negative**: Router logic now includes one setup responsibility in addition to classification.
+
+**Implementation**: Added `scripts/bootstrap-memory.sh`, wrapper scripts inside `skill-router` and `memory-bank`, and updated docs plus entry skill instructions.
+
 ### D001 - YYYY-MM-DD: [Title]
 
 **Status**: Active

@@ -2,7 +2,7 @@
 
 A Codex-native port of the `goldfanatictrader/app-template` repository.
 
-This repository is a self-contained project memory bank template plus a reusable Codex skill pack. Copy or clone it into a project as `memory/`, install the skills into Codex, and use the memory bank to preserve project context across sessions.
+This repository is a self-contained project memory bank template plus a reusable Codex skill pack. Copy or clone it into a project as `memory/`, or let `$skill-router` and `$memory-bank` bootstrap `memory/` automatically into the current project. The bootstrap flow initializes a fresh `memory/PROJECT.md` from `TEMPLATE.md` so each project starts with its own memory history.
 
 ## What Changed From The OpenCode Version
 
@@ -16,9 +16,8 @@ This repository is a self-contained project memory bank template plus a reusable
 ### Option 1: Copy Into A Project
 
 ```bash
-cp -R codex-app-template /path/to/your-project/memory
+./scripts/bootstrap-memory.sh /path/to/your-project
 cd /path/to/your-project/memory
-mv TEMPLATE.md PROJECT.md
 ./scripts/install-skills.sh
 ```
 
@@ -181,6 +180,8 @@ Run:
 ```
 
 That script creates symlinks for every skill into your Codex skills directory.
+
+For a fresh project, use `$skill-router` as the first skill entry point. It now bootstraps `./memory/` from this template automatically when the current project has neither `./memory/PROJECT.md` nor `./PROJECT.md`.
 
 Then start a new Codex thread. `memory-bank` and `project-developer` are configured to allow implicit invocation, while the rest are best invoked explicitly when useful.
 

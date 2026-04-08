@@ -14,10 +14,11 @@ It combines:
 
 ### At Session Start
 
-1. Read `PROJECT.md`.
-2. Check `DECISIONS.md`.
-3. Review `context/conventions.md`.
-4. Load any other context documents needed for the current task.
+1. If the current project has neither `memory/PROJECT.md` nor `PROJECT.md`, bootstrap `memory/` from this template first.
+2. Read `PROJECT.md`.
+3. Check `DECISIONS.md`.
+4. Review `context/conventions.md`.
+5. Load any other context documents needed for the current task.
 
 ### During The Session
 
@@ -34,6 +35,7 @@ It combines:
 ## Suggested Skill Entry Points
 
 - `$skill-router` when the correct workflow is not obvious
+- `$skill-router` as the preferred first call for a fresh project because it bootstraps `memory/` if needed
 - `$client-intake-normalizer` for raw client notes, chats, and meeting materials
 - `$solution-options-tradeoffs` for comparing possible directions
 - `$scope-convergence` for locking MVP boundaries

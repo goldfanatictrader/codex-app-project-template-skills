@@ -7,9 +7,8 @@ This repository is meant to be copied or cloned into a project as `memory/`.
 ### Copy
 
 ```bash
-cp -R codex-app-template /path/to/your-project/memory
+./scripts/bootstrap-memory.sh /path/to/your-project
 cd /path/to/your-project/memory
-mv TEMPLATE.md PROJECT.md
 ```
 
 ### Submodule
@@ -48,6 +47,8 @@ Update:
 ```
 
 ## 5. Use It In Codex
+
+For a brand new project, start with `$skill-router`. It will bootstrap `./memory/` automatically when the current project does not already have `memory/PROJECT.md` or `PROJECT.md`, and it will initialize a fresh `memory/PROJECT.md` from `TEMPLATE.md`.
 
 Main AI-team flow reference:
 

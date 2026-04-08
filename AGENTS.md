@@ -2,11 +2,14 @@
 
 ## Memory First
 
-Before doing anything substantial, read:
+Before doing anything substantial:
 
-1. `PROJECT.md`
-2. `DECISIONS.md`
-3. `context/conventions.md`
+1. If the current project has neither `memory/PROJECT.md` nor `PROJECT.md`, bootstrap `memory/` from this template first.
+2. Then read:
+
+   - `PROJECT.md`
+   - `DECISIONS.md`
+   - `context/conventions.md`
 
 Review additional `context/` and `requirements/` files when the task depends on them.
 

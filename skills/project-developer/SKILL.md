@@ -50,19 +50,21 @@ Complete workflow skill that combines memory bank integration with coding best p
    - ./PROJECT.md
    - ./docs/memory/PROJECT.md
 
-2. Read PROJECT.md and extract:
+2. If none exist, run ../memory-bank/scripts/bootstrap-memory.sh "$PWD"
+
+3. Read PROJECT.md and extract:
    - Quick Reference Card (current state)
    - Last session date
    - Active tasks
    - Blockers
    - Next steps
 
-3. Check DECISIONS.md for:
+4. Check DECISIONS.md for:
    - Recent decisions
    - Architectural rationale
    - Technology choices
 
-4. Review relevant context files:
+5. Review relevant context files:
    - context/conventions.md (coding style)
    - context/stack.md (tech stack)
    - context/architecture.md (if needed)
@@ -138,6 +140,7 @@ Complete workflow skill that combines memory bank integration with coding best p
 ### ALWAYS
 
 ✅ Read memory at session start
+✅ Bootstrap `memory/` first if the project does not have it yet
 ✅ Update memory at session end
 ✅ Follow project conventions
 ✅ Write tests for new code
@@ -147,7 +150,7 @@ Complete workflow skill that combines memory bank integration with coding best p
 
 ### NEVER
 
-❌ Start implementing without reading memory
+❌ Start implementing without reading or bootstrapping memory
 ❌ End session without updating memory
 ❌ Leave TODO comments (create tasks instead)
 ❌ Hardcode values (use constants)

@@ -3,7 +3,7 @@ name: experiment
 description: Comprehensive memory bank template - long-term project memory for AI-assisted development
 version: 2.0.0
 created: 2026-04-07
-last_updated: 2026-04-07
+last_updated: 2026-04-08
 author: User
 license: MIT
 compatibility:
@@ -27,9 +27,9 @@ tags:
 |------|-------|
 | Project | experiment |
 | Phase | Template |
-| Last Session | 2026-04-07 |
-| Current Focus | Template created |
-| Next Action | Copy to new project |
+| Last Session | 2026-04-08 |
+| Current Focus | Make skill-router the memory bootstrap entry point |
+| Next Action | Commit and push the automatic memory bootstrap workflow |
 
 ---
 
@@ -87,6 +87,7 @@ The memory bank template includes:
 | Date | Session # | Agent | Focus | Outcome |
 |------|-----------|-------|-------|---------|
 | 2026-04-07 | 1 | codex | Initial template creation | Created comprehensive memory bank template |
+| 2026-04-08 | 2 | codex | Make skill-router bootstrap memory automatically | Added bootstrap scripts, updated entry skills, and aligned docs for project-first memory creation |
 
 ### Detailed Sessions
 
@@ -112,6 +113,22 @@ The memory bank template includes:
   - Used markdown with YAML frontmatter for metadata
   - Included templates for decisions, meetings, and glossary
 - **Next Steps**: Copy template to new projects as needed
+
+#### Session #2 - 2026-04-08
+
+- **Agent**: codex
+- **Duration**: ~1 hour
+- **Focus**: Turn `skill-router` into the first-call entry point for new projects
+- **Work Done**:
+  - Added `scripts/bootstrap-memory.sh` to copy the template into `./memory/`
+  - Added wrapper bootstrap scripts under `skills/skill-router/` and `skills/memory-bank/`
+  - Updated `skill-router`, `memory-bank`, and `project-developer` to bootstrap project memory automatically when missing
+  - Updated agent metadata and top-level docs to describe the new entry-point behavior
+  - Verified skill structure and tested bootstrap against a temporary empty project
+- **Decisions Made**:
+  - `skill-router` is now the preferred first call for fresh projects
+  - Bootstrap should initialize a fresh `memory/PROJECT.md` from `TEMPLATE.md`, not from the template repo's own `PROJECT.md`
+- **Next Steps**: Commit and push the automatic memory bootstrap workflow
 
 ---
 

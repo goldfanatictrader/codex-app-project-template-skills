@@ -33,16 +33,31 @@ Its job is to:
 3. order the skills if more than one is needed; and
 4. explain the choice briefly.
 
+## Entry Point Requirement
+
+Treat `skill-router` as the preferred entry point when a project is new, unfamiliar, or has not been initialized with local memory.
+
+Before routing:
+
+1. Check whether `./memory/PROJECT.md` or `./PROJECT.md` exists in the current project.
+2. If neither exists, bootstrap `./memory/` immediately by running the bundled `scripts/bootstrap-memory.sh "$PWD"` from this skill directory.
+3. After bootstrapping, read `memory/PROJECT.md` and route from that state instead of routing blind.
+
+Do not ask the user whether to create `memory/` first. The router should create it automatically so the project gets a recorded working history from the first session.
+
 ## Routing Rules
 
 ### Start With Context
 
 First determine:
 
+- Does the current project already have `memory/PROJECT.md` or `PROJECT.md`?
 - Is this a new project or an existing codebase?
 - Is the user planning, implementing, debugging, reviewing, or deploying?
 - Is the repository already understood?
 - Is the request broad enough to need multiple skills?
+
+If both `memory/PROJECT.md` and `PROJECT.md` are missing, bootstrap `memory/` first and then continue classification.
 
 ### Default Minimal Path
 
@@ -160,6 +175,7 @@ Use this routing packet:
 ## Rules
 
 - Route first, then work.
+- Bootstrap `memory/` first if the current project does not have it yet.
 - Prefer fewer skills over more skills.
 - Avoid redundant overlaps such as `coding-assistant` plus `project-developer` unless there is a clear reason.
 - Use `memory-bank` in most project-continuity tasks.

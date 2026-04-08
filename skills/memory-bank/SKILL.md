@@ -40,6 +40,11 @@ This skill ensures the AI reads and updates the project memory bank at the start
 **FIRST ACTION**: Read project memory before ANY other action:
 
 ```bash
+# If the current project has no memory yet, bootstrap it from the template snapshot
+if [ ! -f "memory/PROJECT.md" ] && [ ! -f "PROJECT.md" ]; then
+  bash scripts/bootstrap-memory.sh "$PWD"
+fi
+
 # Check if project has memory bank
 if [ -f "memory/PROJECT.md" ]; then
   cat memory/PROJECT.md
@@ -55,9 +60,10 @@ fi
 4. Note last session date and next steps
 
 **If NO memory exists:**
-1. Inform user about memory bank pattern
-2. Ask if they want to create one (copy from template)
-3. OR proceed without memory if user declines
+1. Run the bundled `scripts/bootstrap-memory.sh "$PWD"` from this skill directory
+2. Re-read `memory/PROJECT.md`
+3. Continue the session with the new local memory copy
+4. Tell the user that project memory was bootstrapped automatically
 
 ### During Session
 
@@ -96,6 +102,7 @@ Update memory bank with:
 ## Key Reminders
 
 - ALWAYS read memory at session start
+- ALWAYS bootstrap `memory/` automatically if it is missing
 - ALWAYS update memory at session end
 - Include rationale in decisions
 - Mark tasks as complete
